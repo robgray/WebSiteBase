@@ -1,0 +1,45 @@
+All Windsor components
+	"sf.default" SessionFactoryImpl / ISessionFactory | Singleton
+	"sf.default-cfg" Configuration | Singleton
+	"sf.default-manager" SessionManager / ISessionManager | Singleton
+	"sf.default-session" late bound ISession | Custom: WrapperResolveLifestyleManager`1
+	"sf.default-session-pwr" late bound ISession | PerWebRequest
+	"sf.default-session-transient" late bound ISession | Transient
+	"sf.default-stateless-session" late bound IStatelessSession | Custom: WrapperResolveLifestyleManager`1
+	"sf.default-stateless-session-pwr" late bound IStatelessSession | PerWebRequest
+	"sf.default-stateless-session-transient" late bound IStatelessSession | Transient
+	AccountController | Transient
+	CallContextActivityManager / IActivityManager | Singleton
+	CanConnectToSqlDatabase / IStartupTest | Undefined (default lifestyle Singleton will be used)
+	CanOpenNHibernateSession / IStartupTest | Undefined (default lifestyle Singleton will be used)
+	ConditionRepository / IConditionRepository | PerWebRequest
+	DefaultDelegateComponentSelector / ITypedFactoryComponentSelector | Singleton
+	DefaultTypedFactoryComponentSelector / ITypedFactoryComponentSelector | Singleton
+	DelegateFactory / ILazyComponentLoader | Singleton
+	EquipmentRepository / IEquipmentRepository | PerWebRequest
+	ExerciseDefinitionRepository / IExerciseDefinitionRepository | PerWebRequest
+	ExercisePhaseRepository / IExercisePhaseRepository | PerWebRequest
+	FactoryInterceptor | Transient
+	GenderUIRepository / IGenderUIRepository | Undefined (default lifestyle Singleton will be used)
+	HomeController | Transient
+	HomeIndexViewModelValidator / IValidator<HomeIndexViewModel> | Undefined (default lifestyle Singleton will be used)
+	LocalPasswordViewModelValidator / IValidator<LocalPasswordViewModel> | Undefined (default lifestyle Singleton will be used)
+	Log4netFactory / ILoggerFactory | Undefined (default lifestyle Singleton will be used)
+	Log4netLogger / ILogger | Undefined (default lifestyle Singleton will be used)
+	LoginViewViewModelValidator / IValidator<LoginViewViewModel> | Undefined (default lifestyle Singleton will be used)
+	NHibernateInstaller / INHibernateInstaller | Singleton
+	OAuthWebSecurityWrapper / IOAuthWebSecurity | Singleton
+	PrescriberMaintainViewModelValidator / IValidator<PrescriberMaintainViewModel> | Undefined (default lifestyle Singleton will be used)
+	PrescriberRegistrationViewModelValidator / IValidator<PrescriberRegistrationViewModel> | Undefined (default lifestyle Singleton will be used)
+	ProgramClientDetailsViewModelValidator / IValidator<ProgramBuildViewModel> | Undefined (default lifestyle Singleton will be used)
+	ProgramController | Transient
+	ProgramInProgressRepository / IProgramInProgressRepository | PerWebRequest
+	RegionRepository / IRegionRepository | PerWebRequest
+	RegisterExternalLoginViewModelValidator / IValidator<RegisterExternalLoginViewModel> | Undefined (default lifestyle Singleton will be used)
+	RoleService / IRoleService | Singleton
+	TransactionClassMetaInfoStore / ITransactionMetaInfoStore | Singleton
+	TransactionInterceptor | Transient
+	TransactionManager / TransactionManager, ITransactionManager | Singleton
+	TypedFactoryInterceptor | Transient
+	UserRepository / IUserRepository | PerWebRequest
+	WebSecurityWrapper / IWebSecurity | Singleton

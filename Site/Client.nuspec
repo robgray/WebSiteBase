@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FizzioFit</id>
+	<title>FizzioFit Web Site</title>
+    <version>$version$</version>
+    <authors>Mammoth Media</authors>
+    <owners>FizzioFit</owners>
+	<licenseUrl>http://www.fizziofit.com</licenseUrl>
+	<projectUrl>http://www.fizziofit.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A FizzioFit website</description>
+  </metadata>
+</package>

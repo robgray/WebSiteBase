@@ -1,0 +1,5 @@
+dbo.ExerciseDefinitionAlternative.AlternativeDefinitionId should be ExerciseDefinitionId
+dbo.Program.ClientId should be UserUserId
+dbo.Program.PrescriberId should be UserUserId
+dbo.webpages_UsersInRoles.RoleId should be webpages_RolesRoleId
+dbo.webpages_UsersInRoles.UserId should be UserUserId

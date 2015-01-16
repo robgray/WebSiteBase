@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Mandrill</id>
+    <version>0.1.0.0</version>
+    <title>Mandrill</title>
+    <authors>Shawn Mclean, Eli Schleifer</authors>
+    <owners>Shawn Mclean, Eli Schleifer</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/shawnmclean/Mandrill-dotnet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Mandrill .Net is a quick and easy wrapper for getting started with the Mandrill API.</description>
+    <releaseNotes />
+    <copyright />
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="RestSharp" version="104.1.0.0" />
+      <dependency id="Newtonsoft.Json" version="4.5.10" />
+    </dependencies>
+    <references>
+      <reference file="Mandrill.dll" />
+    </references>
+  </metadata>
+</package>

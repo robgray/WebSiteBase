@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="BuildAll" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup>
+	<PackageDropPath></PackageDropPath>
+	<BinaryDir></BinaryDir>
+	<VersionInfo></VersionInfo>
+</PropertyGroup>
+	<Target Name="BuildAll">
+		<MSBuild Projects="..\Client\Client.csproj" Targets="CopyPackages" Properties="PackageDropFolder=$(PackageDropPath)"/>
+		<MSBuild Projects="..\Database\Database.csproj" Targets="CopyPackages" Properties="PackageDropFolder=$(PackageDropPath);BinaryDir=$(BinaryDir)"/>		
+	</Target>	
+</Project>

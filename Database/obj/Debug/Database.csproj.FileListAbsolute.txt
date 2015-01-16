@@ -1,0 +1,9 @@
+D:\source\WebSiteBase\Database\bin\Debug\Database.exe.config
+D:\source\WebSiteBase\Database\bin\Debug\Database.exe
+D:\source\WebSiteBase\Database\bin\Debug\Database.pdb
+D:\source\WebSiteBase\Database\bin\Debug\DbUp.dll
+D:\source\WebSiteBase\Database\bin\Debug\NDesk.Options.dll
+D:\source\WebSiteBase\Database\bin\Debug\DbUp.xml
+D:\source\WebSiteBase\Database\obj\Debug\Database.exe
+D:\source\WebSiteBase\Database\obj\Debug\Database.pdb
+D:\source\WebSiteBase\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache

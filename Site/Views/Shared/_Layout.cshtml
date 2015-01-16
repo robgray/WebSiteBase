@@ -1,0 +1,76 @@
+﻿@using WebBase.Mvc.Helpers
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        @Styles.Render("~/bundles/css")                
+        @Scripts.Render("~/bundles/modernizr")                          
+    </head>
+    <body>        
+        <span id="busyIndicator">Busy</span>                
+        <header>
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12" style="position:relative;">                                            
+                    </div>                                    
+                </div>                
+            </div>
+        </header> 
+        <div class="body">
+            <div class="container">                
+                <div id="body" class="row">
+                    @RenderBody()	                    
+                </div>																		                
+                <footer class="row">                                                                                                  
+                    <div class="span6">                        
+                        
+                    </div>                
+                    <div class="span6">
+                        
+                    </div>
+                </footer>
+            </div>            
+        </div>        
+        
+        @Html.RenderSiteMessage() 
+
+        @Scripts.Render("~/bundles/jquery",  "~/bundles/bootstrap", "~/bundles/toastr", "~/bundles/site")
+        <script type="text/javascript">            
+            var timeout;
+            $(document).ajaxStart(function() {
+                if (timeout) { clearTimeout(timeout); }
+                timeout = setTimeout(function() {
+                    $("#busyIndicator").show();
+                }, 100);
+            });
+
+            $(document).ajaxError(function (response) {                
+                if (timeout) { clearTimeout(timeout); }
+                $("#busyIndicator").hide();
+            });
+
+            $(document).ajaxComplete(function() {
+                if (timeout) { clearTimeout(timeout); }
+                $("#busyIndicator").hide();
+            });
+
+            $(function() {                               
+                if (!Modernizr.video) {
+                    toastr.warning('We noticed you are running an old browser. <a href="/latestbrowser">Click here for details</a>')
+                }
+            });           
+        </script>
+        
+        
+               
+        <script src="http://vjs.zencdn.net/c/video.js"></script>
+        @RenderSection("scripts", required: false)
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+    </body>
+</html>

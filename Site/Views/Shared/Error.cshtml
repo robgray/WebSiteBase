@@ -1,0 +1,21 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_SingleColumnLayout.cshtml";
+}
+
+<div style="padding:20px;">
+    <hgroup>
+        <h1>Error</h1>
+        <h2>Something unexpected just happened in our servers</h2>
+    </hgroup>
+
+    <section class="error">
+        <label>Something unexpected just happened in our servers.  The problem has been reported to our technical team.  In the meantime please retry your last action.</label>
+        <label>If you're seeing this screen for a second time please contact as at <a href="mailto://admin@FizzioFit.com">admin@fizziofit.com</a>.  If you need help with your program please contact your physiotherapist</label>
+        <br />
+        <label>We apologise for any inconvenience.</label>
+    </section>
+    
+</div>
